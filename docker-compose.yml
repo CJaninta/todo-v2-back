@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root' # Must be set for mysql:8.0
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 'root'
+      MYSQL_DATABASE: todo-v2
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    restart: always
+
+volumes:
+  db:
