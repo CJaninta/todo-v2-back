@@ -4,5 +4,5 @@
 First step to run app.
 
 - Should be root path of folder.
-- Run this command. ---> ``` docker compose --build -d ```
+- Run this command. ---> ``` docker compose up --build -d ```
 - Run application.
